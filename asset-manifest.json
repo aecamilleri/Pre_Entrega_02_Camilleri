@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aecamilleri/Pre_Entrega_02_Camilleri/static/css/main.4d54ed8b.css",
+    "main.js": "/aecamilleri/Pre_Entrega_02_Camilleri/static/js/main.5f771452.js",
+    "index.html": "/aecamilleri/Pre_Entrega_02_Camilleri/index.html",
+    "main.4d54ed8b.css.map": "/aecamilleri/Pre_Entrega_02_Camilleri/static/css/main.4d54ed8b.css.map",
+    "main.5f771452.js.map": "/aecamilleri/Pre_Entrega_02_Camilleri/static/js/main.5f771452.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d54ed8b.css",
+    "static/js/main.5f771452.js"
+  ]
+}
