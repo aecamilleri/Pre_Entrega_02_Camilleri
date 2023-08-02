@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import CartWidget from './CartWidget';
 
+
 function Header (){
     return (
         <header id="header" className="header flex justify-between py-4 px-2 mx-auto max-w-screen-xl  text-slate-800">
