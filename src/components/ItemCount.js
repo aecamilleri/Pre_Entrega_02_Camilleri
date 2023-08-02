@@ -16,10 +16,10 @@ const ItemCount = ({ onAdd }) => {
 
     return (
     <div>
-        <p>Cantidad: {count}</p>
-        <button onClick={handleDecrement}>-</button>
-        <button onClick={handleIncrement}>+</button>
-        <button onClick={() => onAdd(count)}>Agregar al carrito</button>
+        <p className='text-4xl font-bold my-5'>Cantidad: {count}</p>
+        <button className='uppercase font-semibold w-10 px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleDecrement}>-</button>
+        <button className='uppercase font-semibold w-10 px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleIncrement}>+</button>
+        <button className='uppercase font-semibold px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={() => onAdd(count)}>Agregar al carrito</button>
     </div>
     );
 };
