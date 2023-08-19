@@ -1,18 +1,12 @@
 function Footer (){
   return (
-    <footer style={{
-        textAlign: 'center',
-        position: 'fixed',
-        bottom: 0,
-        width: '100%',
-      }}
-    className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
             <a href="#" class="flex items-center">
-                <img src="./logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                <img src="https://fakestoreapi.com/icons/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
             </a>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

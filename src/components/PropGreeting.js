@@ -1,4 +1,3 @@
-// PropGreeting.js
 import React from 'react';
 
 const PropGreeting = ({ greeting }) => {

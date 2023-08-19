@@ -1,11 +1,12 @@
-// ItemCount.js
 import React, { useState } from 'react';
 
-const ItemCount = ({ onAdd }) => {
-  const [count, setCount] = useState(1);
+const ItemCount = ({ initial, stock, onAdd }) => {
+  const [count, setCount] = useState(initial);
 
   const handleIncrement = () => {
-    setCount(count + 1);
+    if (count < stock) {
+      setCount(count + 1);
+    }
   };
 
   const handleDecrement = () => {
@@ -14,12 +15,21 @@ const ItemCount = ({ onAdd }) => {
     }
   };
 
+  const handleAddToCart = () => {
+    if (count > 0) {
+      onAdd(count);
+    }
+  };
+
   return (
     <div>
-      <p className='text-4xl font-bold my-5'>Cantidad: {count}</p>
-      <button className='uppercase font-semibold w-10 px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleDecrement}>-</button>
-      <button className='uppercase font-semibold w-10 px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleIncrement}>+</button>
-      <button className='uppercase font-semibold px-3 py-2 m-5 border-2 border-yellow-500 rounded-md tracking-widest' onClick={() => onAdd(count)}>Agregar al carrito</button>
+      <div className='flex justify-center flex-wrap content-between pt-3'>
+        <button className='uppercase text-xs w-10 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleDecrement}>-</button>
+        <p className='text-xl font-bold mx-3 py-2'>{count}</p>
+        <button className='uppercase text-xs w-10 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleIncrement}>+</button>
+        <button className='uppercase text-xs px-3 py-0 ml-2 border-2 border-yellow-500 rounded-md tracking-widest' onClick={handleAddToCart}>Agregar al carrito</button>
+        <p className='text-2xl font-bold text-center p-4 w-full'>Stock: {stock}</p>
+      </div>
     </div>
   );
 };

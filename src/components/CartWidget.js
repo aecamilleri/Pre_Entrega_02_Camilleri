@@ -1,8 +1,9 @@
 import { FaShoppingCart } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 const CartWidget = ({ itemCount }) => {
   return (
-    <div
+    <NavLink to={"/carrito"}
       className="cart-widget"
       style={{
         display: 'flex',
@@ -33,7 +34,7 @@ const CartWidget = ({ itemCount }) => {
       >
         {itemCount}
       </span>
-    </div>
+    </NavLink>
   );
 };
 
